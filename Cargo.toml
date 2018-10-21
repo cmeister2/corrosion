@@ -4,5 +4,12 @@ version = "0.0.1"
 authors = ["Max Dymond <cmeister2@gmail.com>"]
 description = "A Magic: The Gathering rules engine"
 license = "MIT"
+repository = "https://github.com/cmeister2/corrosion"
+readme = "README.md"
+keywords = ["mtg"]
+categories = ["game-engines"]
+
+[badges]
+travis-ci = { repository = "cmeister2/corrosion", branch = "master" }
 
 [dependencies]
