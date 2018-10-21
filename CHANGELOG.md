@@ -8,6 +8,8 @@ version number is tracked in the file `VERSION`.
 
 ## [Unreleased]
 ### Changed
+- Remove the Cargo.lock file from this library
+
 ### Added
 
 ## [0.0.2] - 2018-10-21
