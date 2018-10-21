@@ -2,5 +2,7 @@
 name = "corrosion"
 version = "0.0.1"
 authors = ["Max Dymond <cmeister2@gmail.com>"]
+description = "A Magic: The Gathering rules engine"
+license = "MIT"
 
 [dependencies]
