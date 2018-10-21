@@ -1,8 +1,18 @@
 language: rust
 rust:
-  - stable
-  - beta
-  - nightly
+- stable
+- beta
+- nightly
 matrix:
   allow_failures:
-    - rust: nightly
+  - rust: nightly
+env:
+  global:
+    secure: SXNbdowHasM5/kLHpj0YwA8P3ufHnule6Ih5Jg9Qtu3AU94gm1yXjR2wq8xlpf/oanStqdcjfpa7WewOXtUnDjQj1ifuv9P0H1D20Jt4lG5xaLYn4XaR4lxbBjukml0J/kYJ827vP8rmsPCHLSq5bnqB9Vnpl0o+mgjJxlBFF7JBOR8MzUYQBwGdptFI0YR4EiZ0K0KbdPTOUTdXzaQwjY1wKffjPcmC3lrEyqrbwcsAFoSFYBbrapujfYaTR5ED/HZSCYlxc3O1q8vyx947KzsSIGw8qF0TJg7idHR8mkdj8LYEwzgc5OKzkvexN0h8VxajMUIwtrBzmzBN6JgwjHUzm9xJN8DMn5nqexqn4iF/9fEs62YsERPMrbFL4nsMsEp5BHYt6YhoUgsaoB6pVj4DIkjX2qRlhRFPMjrAWC3xjnFnCh26upLnduQ9Mg6JToSk63XRpi9xRjN4B9p35qw9hJ5w7k03rOFHG9UhAQq0RW0ts+mUvdv27+adxnpS+cTEkQXoGfvaK9rbgcDI+rlkLbjxxhhxOFf2+iyV8BSTenKO0NCoL5opmCHIh3f8u7m2NwRmKHlr6gC8qLeCGG7aIF8eBLAzQeTdLguwO/FcEkbKHsLMvOnVagz1VDjRG60JSVhnqEap2y05JTe0HFVbsMvewJbTImKkdq4R0wM=
+
+deploy:
+  provider: script
+  script: bash scripts/deploy.sh
+  on:
+    tags: true
+    rust: "stable"
