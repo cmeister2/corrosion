@@ -1,6 +1,6 @@
 [package]
 name = "corrosion"
-version = "0.0.1"
+version = "0.0.2"
 authors = ["Max Dymond <cmeister2@gmail.com>"]
 description = "A Magic: The Gathering rules engine"
 license = "MIT"
